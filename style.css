@@ -1,0 +1,160 @@
+:root {
+    --black: #121214;
+    --gray100: #FAFAFC;
+    --gray200: #F0F0F4;
+    --gray300: #ECECEC;
+    --gray500: #F0F0F4;
+    --gray600: #E6E6F0;
+    --gray700: #D6D6D6;
+    --white: #FFFFFF;
+    --red: #DB1B1B;
+
+    --text: #32264D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to bottom,
+            var(--black) 0%,
+            var(--black) 23%,
+            var(--gray300) 0%,
+            var(--gray300) 100%);
+    min-height: 100vh;
+}
+
+.container {
+    width: 60%;
+    max-width: 736px;
+    margin: auto;
+}
+
+.header {
+    text-align: left;
+    color: var(--white);
+    margin-top: 184px;
+}
+
+.header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+.card {
+    background: var(--gray100);
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 229px;
+}
+
+.fields {
+    padding: 64px;
+    color: var(--text);
+}
+
+.fields h2 {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.fields hr {
+    border: none;
+    height: 1px;
+    background-color: var(--gray600);
+}
+
+.card label {
+    display: block;
+    margin-top: 24px;
+    font-size: 0.875rem;
+}
+
+.card input,
+textarea {
+    background-color: var(--gray100);
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--gray600);
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+.card textarea {
+    height: 168px;
+    resize: none;
+}
+
+.btn-container {
+    background-color: var(--gray200);
+    width: 100%;
+    padding: 40px 64px;
+    border-top: 1px solid var(--gray700);
+}
+
+.btn-container button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header {
+        margin-top: 20%;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .card {
+        margin-bottom: 20%;
+    }
+
+    .fields {
+        padding: 24px;
+    }
+
+    .card input,
+    textarea {
+        padding: 10px;
+    }
+
+    .card textarea {
+        height: auto;
+    }
+
+    .btn-container {
+        padding: 40px 24px;
+    }
+
+    .btn-container button {
+        padding: 10px;
+    }
+}
